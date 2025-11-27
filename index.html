@@ -67,6 +67,16 @@
             height: 20px;
             display: block;
             fill: currentColor;
+            transition: transform 160ms cubic-bezier(.2, .9, .3, 1), opacity 160ms ease;
+            transform-origin: center center;
+            will-change: transform;
+        }
+
+        /* subtle scale on hover/focus for a snappier feel */
+        .icon-link:hover svg,
+        .icon-link:focus svg,
+        .icon-link:focus-visible svg {
+            transform: scale(1.12);
         }
 
         .icon-link:hover {
