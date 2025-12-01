@@ -12,6 +12,10 @@
       padding: 0;
     }
 
+    :root {
+      --header-height: 96px;
+    }
+
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       line-height: 1.6;
@@ -258,6 +262,32 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(31, 58, 74, 0.08);
+      margin: 1rem 0;
+      /* give a small gap so rounded corners are visible against header/footer */
+    }
+
+    /* hero viewport wrapper centers hero vertically in the viewport below the header */
+    .hero-viewport {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: calc(100vh - var(--header-height));
+      padding: 1rem 0;
+    }
+
+    /* constrain hero content and ensure true centering */
+    .hero .hero-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
     }
 
     .hero h2 {
@@ -313,6 +343,9 @@
     /* About */
     #about {
       background-color: #f5f3f0;
+      border-radius: 10px;
+      padding: 2.5rem 2rem;
+      box-shadow: 0 6px 18px rgba(31, 58, 74, 0.04);
     }
 
     #about p {
@@ -523,13 +556,18 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="hero" id="home">
-    <h2>Jordie Niles</h2>
-    <p class="tagline">Operational Management & Customer Service Expert</p>
-    <p>Results-oriented professional with 15+ years of customer service and sales expertise. Proven track record in team
-      leadership, strategic problem-solving, and driving customer service excellence.</p>
-    <a href="#experience" class="cta-button">View My Experience</a>
-  </section>
+  <div class="hero-viewport">
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <h2>Jordie Niles</h2>
+        <p class="tagline">Operational Management & Customer Service Expert</p>
+        <p>Results-oriented professional with 15+ years of customer service and sales expertise. Proven track record in
+          team
+          leadership, strategic problem-solving, and driving customer service excellence.</p>
+        <a href="#experience" class="cta-button">View My Experience</a>
+      </div>
+    </section>
+  </div>
 
   <!-- About Me Section -->
   <section id="about">
@@ -695,6 +733,37 @@
       toggle.addEventListener('click', function () { if (body.classList.contains('nav-open')) closeNav(); else openNav(); });
       document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && body.classList.contains('nav-open')) closeNav(); });
       document.addEventListener('click', function (e) { if (!body.classList.contains('nav-open')) return; const isInside = nav.contains(e.target) || toggle.contains(e.target); if (!isInside) closeNav(); });
+    })();
+  </script>
+  <script>
+    (function () {
+      // compute combined topbar + header height and set --header-height CSS variable
+      function setHeaderHeight() {
+        try {
+          const topbar = document.querySelector('.topbar');
+          const header = document.querySelector('header');
+          let h = 0;
+          if (topbar) h += Math.ceil(topbar.getBoundingClientRect().height);
+          if (header) h += Math.ceil(header.getBoundingClientRect().height);
+          if (!h || h <= 0) h = 96; // fallback
+          document.documentElement.style.setProperty('--header-height', h + 'px');
+        } catch (err) {
+          // ignore
+        }
+      }
+
+      // run on load and resize
+      window.addEventListener('load', setHeaderHeight);
+      window.addEventListener('resize', function () { window.requestAnimationFrame(setHeaderHeight); });
+
+      // also run once now in case DOM is ready
+      if (document.readyState === 'complete' || document.readyState === 'interactive') setHeaderHeight();
+      else document.addEventListener('DOMContentLoaded', setHeaderHeight);
+
+      // when fonts finish loading they can change layout — recalc then
+      if (document.fonts && document.fonts.ready) {
+        document.fonts.ready.then(setHeaderHeight).catch(function () { });
+      }
     })();
   </script>
 </body>
