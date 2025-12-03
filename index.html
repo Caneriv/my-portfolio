@@ -426,6 +426,25 @@
       font-weight: bold;
     }
 
+    /* Projects */
+    .projects-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .project-card {
+      background: linear-gradient(180deg, #ffffff 0%, #fbfbfb 100%);
+      border-radius: 8px;
+      padding: 1.25rem;
+      box-shadow: 0 6px 18px rgba(31,58,74,0.04);
+      border-top: 3px solid #d4af37;
+    }
+
+    .project-card h3 { margin: 0 0 0.5rem 0; color: #1f3a4a; font-size: 1.1rem; }
+    .project-card p { color: #555; font-size: 0.95rem; line-height: 1.5; }
+
     /* Education */
     #education {
       background-color: #f5f3f0;
@@ -548,6 +567,7 @@
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -580,6 +600,14 @@
     <p style="margin-top:1.5rem;"><strong>Location:</strong> Winnipeg, MB | <strong>Phone:</strong> (204) 298-5968 |
       <strong>Email:</strong> jordankatrinaniles@gmail.com
     </p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-container">
+      <!-- Project cards removed per request. Project detail pages remain under /projects/ but are intentionally left minimal/empty. -->
+    </div>
   </section>
 
   <!-- Experience Section -->
