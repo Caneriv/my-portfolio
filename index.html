@@ -1,41 +1,602 @@
 <!DOCTYPE html>
-<!-- saved from url=(0057)https://jordieniles-data-science-portfolio.my.canva.site/ -->
-<html dir="ltr" lang="en-GB" class="theme light EHoceA"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!--<base href="/">--><base href="."><title>Jordie</title><meta name="app-name" content="export_website"><meta name="viewport" content="width=device-width, initial-scale=1"><link href="./JordieNiles_files/a0684b0780c739e9.vendor.ltr.css" rel="stylesheet" integrity="sha512-JwMCpiHdk95MoUTatfaZJwstzeDnWfvWMJiwnSxZfPmgeCe4yvQDQ+ONMQjIy/Ht72r0TmlE+gvZnYRnpdLdVg==" crossorigin="anonymous"><link href="./JordieNiles_files/3c4332f2011470b4.ltr.css" rel="stylesheet" integrity="sha512-Is8KRfDq17hzpiGSn6c6+geA7nqD6bd+lmxKBZgO+pHphN7btHmqPCiFvBNYl/UGAVgsBQn4VGWnVkHT5RgBjg==" crossorigin="anonymous"><link href="./JordieNiles_files/static_font_4.ltr.css" rel="stylesheet"><link href="./JordieNiles_files/e1588ff2ca4d8881.runtime.js" rel="preload" as="script" crossorigin="anonymous" integrity="sha512-yU75ONOWCK3e0fgepLgaFr8uVqfXdp8ZdvgspvrPlaCHcnM6BXh5NduCoSENT9mXfijEpd4GYeeCSLk5SlVFXw==" nonce=""><link href="./JordieNiles_files/e031ed77ccb376b6.s4le6a.vendor.js" rel="preload" as="script" crossorigin="anonymous" integrity="sha512-GwhM1lzGjpz0BUtC+9cJsDQWyT0WrAaXfW1wZ9NAGz3Cw/1NGbw5S6F6VftzXIR/6+Qx9FL40aw2KntEjTNXUw==" nonce=""><link href="./JordieNiles_files/4842a15bd0f2b2e2.vendor.js" rel="preload" as="script" crossorigin="anonymous" integrity="sha512-IZ8Ko57MvZ2IA9Xh3HysunrYL7S0pWbFi9mklqxwZYUTwdJ8mQXrAcJAK/HXSJ6dkk3KToWvM3HTX6qhaZ55nQ==" nonce=""><link href="./JordieNiles_files/477bdd969020a7a7.strings.js" rel="preload" as="script" crossorigin="anonymous" integrity="sha512-15ffIhlWpl6oqkB6hPUN+nc3qrd9cn0Jq7pLBt7Sbkq4hznSvX21PYJoGvRSgquJFcoJOA2oAHjJaUXhznsnsQ==" nonce=""><link href="./JordieNiles_files/a378ca122c68173c.en-GB.js" rel="preload" as="script" crossorigin="anonymous" integrity="sha512-WFGosI3H5tIzz4//qgCTvXU8zymlsXdbxh+7Y4hzVvuwhpNY+Vrbyax8yvVfUy3vNHW30rfDf0pXfQfRzqm5Kw==" nonce=""><link href="./JordieNiles_files/d0ab7ed4fa1bd937.js" rel="preload" as="script" crossorigin="anonymous" integrity="sha512-2xm6dKkmwFvqxULj+UIBlW+0gF6cVQALfcrhsvI0r6CeUNfh+Hqx5zgTjCLAKy9Hdal0XMsOgGdYvgUNKHkx4g==" nonce=""><meta name="referrer" content="strict-origin-when-cross-origin"><meta property="og:title" content="Jordie"><meta property="og:type" content="website"><link rel="shortcut icon" href="https://jordieniles-data-science-portfolio.my.canva.site/_assets/images/2d0b56e7e51cf11036ad8734bdb67e2d.png"><link rel="icon" href="https://jordieniles-data-science-portfolio.my.canva.site/_assets/images/e53c4bd8da5e491d9ab09e7cf0daf874.png" sizes="192x192"><link rel="apple-touch-icon" href="https://jordieniles-data-science-portfolio.my.canva.site/_assets/images/725b756a69a7d4c235070e51acd85560.png" sizes="180x180"><script nonce="">window['__canva_website_bootstrap__'] = JSON.parse('{"A":"DAG7DCdk8oE","B":"eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIiwia2lkIjoia2lkLTE3NDAwODM2MjAyNzEifQ..s7HFwq24OmZnZY29.2JP3asO6XhC163iL5-c_2mQb1awvyXEki24yeyg7kl451cWcu--1fhMu__1zhZungVvMcp4F-g.gFurolgbLXPFEXru0ULJjg"}');</script><script nonce="">
-      document.addEventListener('contextmenu', (e) => {
-        const isMedia = ['img', 'image', 'video', 'svg', 'picture'].some(
-          tagName => tagName.localeCompare(e.target.tagName, undefined, { sensitivity: 'base' }) === 0,
-        );
-        isMedia && e.preventDefault();
-      });
-    </script><script nonce="">
-  const lang = navigator.language ? navigator.language : 'en';
-  window.canva_installFooter = (container) => {
-    if (!(container instanceof HTMLDivElement)) {
-      return;
-    }
-    fetch('_footer?lang=' + encodeURIComponent(lang)).then(response => {
-      if (response.status !== 200) {
-        return;
-      }
-      response.text().then(footerStr => {
-        container.innerHTML = '';
-        const div = document.createElement('div');
-        div.innerHTML = footerStr;
-        for (const child of [...div.children]) {
-          if (child.tagName.toLowerCase() !== 'script') {
-            container.append(child);
-          }
-        }
+<html lang="en">
 
-        (() => { !function(){"use strict";const t={active:"active"},o={modalBackdrop:"modal_backdrop",termsAndConditionsModal:"modal",termsAndConditionsModalCloseButton:"form_close_initial",reportButton:"form_report",privacyPolicyModal:"privacy_policy_modal",privacyPolicyModalCloseButton:"form_close_privacy_policy",termsAndSupportFooterButton:"report_button",privacyPolicyFooterButton:"privacy_policy_button"};!function(){const c=document.getElementById(o.modalBackdrop);null!=c&&(function(c){const e=document.getElementById(o.termsAndConditionsModal),n=document.getElementById(o.termsAndConditionsModalCloseButton),l=document.getElementById(o.reportButton),i=document.getElementById(o.termsAndSupportFooterButton);if(null==e||null==n||null==l||null==i)return;l.onclick=()=>{const{origin:t,pathname:o}=window.location,c=t+o,e=l.dataset.reportUrl+encodeURIComponent(c);window.open(e)};const s=()=>{c.classList.remove(t.active),e.classList.remove(t.active),i.classList.remove(t.active),i.focus(),c.onclick=null};n.onclick=s,i.onclick=()=>{c.classList.add(t.active),c.onclick=s,e.classList.add(t.active),i.classList.add(t.active)}}(c),function(c){const e=document.getElementById(o.privacyPolicyModal),n=document.getElementById(o.privacyPolicyModalCloseButton),l=document.getElementById(o.privacyPolicyFooterButton);if(null==e||null==n||null==l)return;const i=()=>{c.classList.remove(t.active),e.classList.remove(t.active),l.classList.remove(t.active),l.focus(),c.onclick=null};n.onclick=i,l.onclick=()=>{c.classList.add(t.active),c.onclick=i,e.classList.add(t.active),l.classList.add(t.active)}}(c))}()}(); })();
-      });
-    });
-  }
-</script><script nonce="">
-    window.C_CAPTCHA_IMPLEMENTATION = 'RECAPTCHA';
-</script><script nonce="">
-    window.C_CAPTCHA_KEY = '6LdpNmIrAAAAAHQVezN3pBAfDjQQ2qUpo881f24o';
-</script><style type="text/css"></style><style type="text/css"></style><link rel="stylesheet" type="text/css" href="./JordieNiles_files/932e17a8cb853bc7.ltr.css"><link rel="stylesheet" type="text/css" href="./JordieNiles_files/b2052830eddb4963.ltr.css"><link rel="stylesheet" type="text/css" href="./JordieNiles_files/bcd698c3f166528d.ltr.css"><link rel="stylesheet" type="text/css" href="./JordieNiles_files/c1b46feba703e1dd.ltr.css"><link rel="stylesheet" type="text/css" href="./JordieNiles_files/f7688c2d15a1efc4.ltr.css"></head><body><script nonce="">document.documentElement.classList.replace('adaptive', window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');</script><div id="root"><div class="yIDCqA"><main class="_8OlyIw"><div class="_4KoDHA"><div class="ZRRuDw"><div style="height: 100%; width: 100%;"><div class="KYQZFA"><section id="PBPdm4cskWgmQkD8" class="rGeu6w" data-scroll-ready="true" style="background-color: rgb(239, 233, 228);"><div><div class="_8jGYJw" style="width: 1440px; height: 820px;"><div class="fMSICA h517IA" aria-hidden="false"><div class="_5yhCRQ"><div class="onhyOQ" style="width: 1440px; height: 820px; align-items: center;"><div class="twbtjQ"><div class="GDnEHQ" style="width: 1440px; height: 820px; background-color: rgb(255, 255, 255);"><div class="o2Yl2g"><div class="_mXnjA" lang="en-GB" style="width: 1440px; height: 820px;"><div class="_6t4CHA"><div class="a26Xuw"><div class="fbzKiw" style="background: rgb(239, 233, 228);"></div></div></div><div style="position: absolute; top: 82px; left: 82px; width: 1276px; height: 656px;"></div><div class="DF_utQ _0xkaeQ" style="width: 428.974px; height: 614.4px; transform: translate(844.137px, 76.8px);"><div class="m1aeoQ" style="position: absolute; top: 0px; left: 0px; transform-origin: 0px 0px; height: 614.4px; width: 428.974px; transform: scale(1);"><div class="hWv4NA" style="width: 428.974px; height: 614.4px; margin-left: 0px; margin-top: 0px;"><svg class="_7KaXww"><defs><clippath id="__id0"><path d="M175.05012890289316,0C271.69865368089376,0 350,78.40160412489259 350,175.05012890289316L350,501.28902893153827L0,501.28902893153827L0,175.05012890289316C0,78.40160412489259 78.40160412489259,0 175.05012890289316,0Z"></path></clippath></defs></svg><div class="bFnJ2A" style="clip-path: url(&quot;#__id0&quot;); transform: scale(1.22564, 1.22564); transform-origin: 0px 0px; width: 350px; height: 501.289px;"><div class="_4c2rDg GxUsfw" style="transform-origin: 175px 250.645px;"><div class="qhHTGg" style="width: 629.798px; height: 501.289px; transform: translate(-122.844px, -1.13687e-13px) translate(314.899px, 250.645px) rotate(0deg) translate(-314.899px, -250.645px); transform-origin: 0px 0px;"><img class="_7_i_XA" crossorigin="anonymous" draggable="false" src="./JordieNiles_files/5bac1f92076945688f8316401440537a.png"></div></div></div></div><div class="Pr6LEA"></div></div></div><div class="DF_utQ _0xkaeQ" style="width: 906.624px; height: 159.333px; transform: translate(113.8px, 76.8px);"><div class="aF9o6Q _0yZ6Qg" style="writing-mode: horizontal-tb; width: 906.624px; height: 159.333px;"><div style="transform: translate(0px, 20.6666px);"><div class="E8yZTA"><div><div lang="en-GB" class="_2UyCZQ vkN2Cw Mb8E_A e1_zQg"><p class="_28USrA GEC0sA XN6uKA _4N4NA" style="font-family: YAEp6DuM3Gw_0, auto; --H97cbQ: 133.333px; color: rgb(0, 0, 0); line-height: 118px; letter-spacing: 0.078em; --gixK-A: 0; text-transform: none; --kJ5CrQ: 0; --zPlnxA: none; list-style-type: none;"><span class="a_GcMg" style="font-size: 1em; font-weight: 400; font-style: normal; color: rgb(212, 155, 114); font-kerning: none; text-decoration-line: none; text-decoration-thickness: initial; text-decoration-style: initial;">Hi, I’m</span></p></div></div></div></div></div></div></div></div></div><div class="QhExXw pKfnlA" style="width: 1440px; height: 820px; margin: 0px;"></div></div></div></div></div></div></div></section><section id="PBNjsXG9dHGG3YnZ" class="rGeu6w" data-scroll-ready="true" style="background-color: rgb(239, 233, 228);"><div><div class="onhyOQ" style="width: 1440px; height: 820px; align-items: center;"><div class="twbtjQ"><div class="GDnEHQ" style="width: 1440px; height: 820px; background-color: rgb(255, 255, 255);"><div class="o2Yl2g"><div class="_mXnjA" lang="en-GB" style="width: 1440px; height: 820px;"><div class="_6t4CHA"><div class="a26Xuw"><div class="fbzKiw" style="background: rgb(239, 233, 228);"></div></div></div><div style="position: absolute; top: 82px; left: 82px; width: 1276px; height: 656px;"></div><div class="DF_utQ _0xkaeQ" style="width: 866.394px; height: 419.572px; transform: translate(405.431px, 300.732px); opacity: 0.13;"><div class="m1aeoQ" style="position: absolute; top: 0px; left: 0px; transform-origin: 0px 0px; height: 419.572px; width: 866.394px; transform: scale(1);"><div class="hWv4NA" style="width: 866.394px; height: 419.572px; margin-left: 0px; margin-top: 0px;"><svg class="_7KaXww"><defs><clippath id="__id1"><path d="M21.96525686661827,0L506.66138787743876,0C518.7924642747048,0 528.626644744057,9.834180469352214 528.626644744057,21.96525686661827L528.626644744057,234.03474312328208C528.626644744057,246.16581952054813 518.7924642747048,255.99999998990035 506.66138787743876,255.99999998990035L21.96525686661827,255.99999998990035C9.834180469352214,255.99999998990035 0,246.16581952054813 0,234.03474312328208L0,21.96525686661827C0,9.834180469352214 9.834180469352214,0 21.96525686661827,0Z"></path></clippath></defs></svg><div class="bFnJ2A" style="clip-path: url(&quot;#__id1&quot;); background: rgb(212, 155, 114); width: 528.627px; height: 256px; transform: scale(1.63895, 1.63895); transform-origin: 0px 0px;"></div></div></div></div><div class="DF_utQ _0xkaeQ" style="width: 885.796px; height: 379.933px; transform: translate(427.048px, 322.415px);"><div class="aF9o6Q _0yZ6Qg" style="writing-mode: horizontal-tb; width: 885.796px; height: 379.933px;"><div style="transform: translate(0px, -2.53333px);"><div class="E8yZTA"><div><div lang="en-GB" class="_2UyCZQ vkN2Cw Mb8E_A e1_zQg"><p class="_28USrA _2ENCSQ XN6uKA _4N4NA" style="font-family: YAEp6DuM3Gw_0, auto; --H97cbQ: 25.3333px; color: rgb(175, 142, 114); line-height: 35px; letter-spacing: 0em; --gixK-A: 0; text-transform: none; --kJ5CrQ: 0; --zPlnxA: none; list-style-type: none;"><span class="a_GcMg" style="font-size: 1em; font-weight: 400; font-style: normal; color: rgb(175, 142, 114); font-kerning: normal; text-decoration-line: none; text-decoration-thickness: initial; text-decoration-style: initial;">There is plenty to see; I’ve built data-driven solutions using</span><span class="a_GcMg zYq_BQ" style="font-size: 1em; font-weight: 400; font-style: normal; color: rgb(175, 142, 114); font-kerning: normal; text-decoration-line: none; text-decoration-thickness: initial; text-decoration-style: initial;"> </span></p><p class="_28USrA _2ENCSQ XN6uKA" style="font-family: YAEp6DuM3Gw_0, auto; --H97cbQ: 25.3333px; color: rgb(175, 142, 114); line-height: 35px; letter-spacing: 0em; --gixK-A: 0; text-transform: none; --kJ5CrQ: 0; --zPlnxA: none; list-style-type: none;"><span class="a_GcMg" style="font-size: 1em; font-weight: 400; font-style: normal; color: rgb(175, 142, 114); font-kerning: normal; text-decoration-line: none; text-decoration-thickness: initial; text-decoration-style: initial;">Python, SQL and Statistical Methods. Feel free to explore</span><span class="a_GcMg zYq_BQ" style="font-size: 1em; font-weight: 400; font-style: normal; color: rgb(175, 142, 114); font-kerning: normal; text-decoration-line: none; text-decoration-thickness: initial; text-decoration-style: initial;"> </span></p>... (truncated for brevity)
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jordie Niles - Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --header-height: 96px;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    /* layout helpers */
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      width: 100%;
+    }
+
+    /* Topbar */
+    .topbar {
+      background: #1a2332;
+      color: #fff;
+      padding: 0.45rem 0;
+      font-size: 0.95rem;
+    }
+
+    .topbar .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .topbar-right {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    /* Header */
+    header {
+      background-color: #1f3a4a;
+      color: white;
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 40;
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .brand {
+      font-size: 1.5rem;
+      color: white;
+      margin: 0;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    .nav-toggle {
+      background: transparent;
+      border: none;
+      color: white;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.3rem;
+      cursor: pointer;
+    }
+
+    .nav-toggle:focus {
+      outline: 2px solid #d4af37;
+      outline-offset: 2px;
+    }
+
+    /* main nav (off-canvas on small screens) */
+    .main-nav {
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 100vh;
+      width: 280px;
+      background: #fff;
+      box-shadow: -8px 0 24px rgba(0, 0, 0, 0.12);
+      transform: translateX(100%);
+      transition: transform 240ms cubic-bezier(.2, .9, .3, 1);
+      padding: 3.5rem 1.5rem;
+      z-index: 60;
+    }
+
+    body.nav-open .main-nav {
+      transform: translateX(0);
+    }
+
+    .main-nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .main-nav a {
+      color: #2c3e50;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 1.05rem;
+    }
+
+    /* Desktop inline nav */
+    @media (min-width: 769px) {
+      .nav-toggle {
+        display: none;
+      }
+
+      .main-nav {
+        position: static;
+        transform: none;
+        height: auto;
+        width: auto;
+        background: transparent;
+        padding: 0;
+        box-shadow: none;
+      }
+
+      .main-nav ul {
+        flex-direction: row;
+        gap: 2rem;
+      }
+
+      .main-nav a {
+        color: white;
+      }
+    }
+
+    /* Icon link styles */
+    .icon-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      text-decoration: none;
+      color: inherit;
+      position: relative;
+    }
+
+    .icon-link svg {
+      width: 20px;
+      height: 20px;
+      display: block;
+      fill: currentColor;
+      transition: transform 160ms cubic-bezier(.2, .9, .3, 1), opacity 160ms ease;
+      transform-origin: center center;
+      will-change: transform;
+    }
+
+    .icon-link:hover svg,
+    .icon-link:focus svg,
+    .icon-link:focus-visible svg {
+      transform: scale(1.12);
+    }
+
+    .icon-link:hover {
+      color: #b8860b;
+    }
+
+    .footer-link {
+      color: #d4af37;
+    }
+
+    /* accessibility helper */
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    /* Tooltip styling */
+    .icon-link[data-tooltip]::after,
+    .icon-link[data-tooltip]::before {
+      opacity: 0;
+      pointer-events: none;
+      visibility: hidden;
+      transition: opacity 180ms ease, transform 180ms ease;
+      z-index: 20;
+    }
+
+    .icon-link[data-tooltip]::after {
+      content: attr(data-tooltip);
+      position: absolute;
+      bottom: 125%;
+      left: 50%;
+      transform: translateX(-50%) translateY(6px);
+      background: #1f3a4a;
+      color: #fff;
+      padding: 6px 8px;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      white-space: nowrap;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .icon-link[data-tooltip]::before {
+      content: '';
+      position: absolute;
+      bottom: 115%;
+      left: 50%;
+      transform: translateX(-50%) translateY(6px);
+      border-width: 6px 6px 0 6px;
+      border-style: solid;
+      border-color: #1f3a4a transparent transparent transparent;
+    }
+
+    .icon-link[data-tooltip]:hover::after,
+    .icon-link[data-tooltip]:focus::after,
+    .icon-link[data-tooltip]:hover::before,
+    .icon-link[data-tooltip]:focus::before {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+      visibility: visible;
+    }
+
+    .icon-link[data-tooltip]:focus-visible::after,
+    .icon-link[data-tooltip]:focus-visible::before {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+      visibility: visible;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, #1f3a4a 0%, #2d5f6f 100%);
+      color: white;
+      padding: 6rem 2rem;
+      text-align: center;
+      min-height: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(31, 58, 74, 0.08);
+      margin: 1rem 0;
+      /* give a small gap so rounded corners are visible against header/footer */
+    }
+
+    /* hero viewport wrapper centers hero vertically in the viewport below the header */
+    .hero-viewport {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: calc(100vh - var(--header-height));
+      padding: 1rem 0;
+    }
+
+    /* constrain hero content and ensure true centering */
+    .hero .hero-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: white;
+    }
+
+    .hero .tagline {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+      opacity: 0.95;
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+      max-width: 600px;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background-color: #d4af37;
+      color: #1f3a4a;
+      padding: 0.8rem 2rem;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      font-weight: 600;
+    }
+
+    .cta-button:hover {
+      background-color: #e8c547;
+    }
+
+    /* Profile Image */
+    .profile-image {
+      width: 240px;
+      height: 320px;
+      border-radius: 120px 120px 0 0;
+      object-fit: cover;
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+      margin-bottom: 2rem;
+    }
+
+    /* Sections */
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: #1f3a4a;
+      border-bottom: 3px solid #d4af37;
+      padding-bottom: 0.5rem;
+      display: inline-block;
+    }
+
+    /* About */
+    #about {
+      background-color: #f5f3f0;
+      border-radius: 10px;
+      padding: 2.5rem 2rem;
+      box-shadow: 0 6px 18px rgba(31, 58, 74, 0.04);
+    }
+
+    #about p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #4a4a4a;
+    }
+
+    /* Experience */
+    #experience {
+      background-color: white;
+    }
+
+    .experience-container {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .experience-card {
+      background-color: #fafaf8;
+      padding: 1.5rem;
+      border-left: 4px solid #d4af37;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    .experience-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      margin-bottom: 0.5rem;
+    }
+
+    .experience-card h3 {
+      color: #1f3a4a;
+      margin: 0;
+      font-size: 1.3rem;
+    }
+
+    .experience-date {
+      background-color: #d4af37;
+      color: #1f3a4a;
+      padding: 0.4rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      white-space: nowrap;
+      margin-left: 1rem;
+      font-weight: 600;
+    }
+
+    .experience-card .company {
+      color: #666;
+      font-weight: 600;
+      margin: 0.3rem 0 1rem 0;
+      font-size: 1rem;
+    }
+
+    .experience-card ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .experience-card li {
+      color: #4a4a4a;
+      padding: 0.5rem 0;
+      padding-left: 1.5rem;
+      position: relative;
+      line-height: 1.6;
+    }
+
+    .experience-card li:before {
+      content: "→";
+      position: absolute;
+      left: 0;
+      color: #d4af37;
+      font-weight: bold;
+    }
+
+    /* Projects */
+    .projects-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .project-card {
+      background: linear-gradient(180deg, #ffffff 0%, #fbfbfb 100%);
+      border-radius: 8px;
+      padding: 1.25rem;
+      box-shadow: 0 6px 18px rgba(31, 58, 74, 0.04);
+      border-top: 3px solid #d4af37;
+    }
+
+    .project-card h3 {
+      margin: 0 0 0.5rem 0;
+      color: #1f3a4a;
+      font-size: 1.1rem;
+    }
+
+    .project-card p {
+      color: #555;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    /* Education */
+    #education {
+      background-color: #f5f3f0;
+    }
+
+    .education-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .education-card {
+      background-color: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-top: 4px solid #d4af37;
+    }
+
+    /* Skills */
+    .skills-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .skill-card {
+      background-color: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .skill-card h3 {
+      color: #1f3a4a;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+
+    .skill-card p {
+      color: #4a4a4a;
+      font-size: 0.95rem;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #1a2332;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 768px) {
+      .skills-container {
+        grid-template-columns: 1fr;
+      }
+
+      .education-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Compact contact topbar -->
+  <div class="topbar" role="banner" aria-hidden="false">
+    <div class="container">
+      <div class="topbar-left"></div>
+      <div class="topbar-right">
+        <a href="tel:+12042985968" class="icon-link footer-link" title="Call (204) 298-5968">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1C10.07 21 3 13.93 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.24.2 2.45.57 3.57.13.4.04.86-.24 1.01l-2.21 2.21z" />
+          </svg>
+          <span class="sr-only">Call (204) 298-5968</span>
+        </a>
+        <a href="mailto:jordankatrinaniles@gmail.com" class="icon-link footer-link"
+          title="Email jordankatrinaniles@gmail.com">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+          </svg>
+          <span class="sr-only">Email jordankatrinaniles@gmail.com</span>
+        </a>
+        <a href="https://www.linkedin.com/in/jordieniles" target="_blank" rel="noopener" class="icon-link footer-link"
+          title="View LinkedIn profile">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M4.98 3.5C4.98 4.6 4.14 5.5 3 5.5 1.86 5.5 1 4.6 1 3.5 1 2.4 1.86 1.5 3 1.5c1.14 0 1.98.9 1.98 2zM.5 8.98h4.98V24H.5zM8.5 8.98h4.78v2.04h.07c.67-1.27 2.3-2.6 4.74-2.6 5.07 0 6 3.34 6 7.67V24H19.3v-7.37c0-1.76-.03-4.03-2.48-4.03-2.48 0-2.85 1.93-2.85 3.92V24H8.5z" />
+          </svg>
+          <span class="sr-only">LinkedIn</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="container header-inner">
+      <h1 class="brand">Jordie Niles</h1>
+      <button id="nav-toggle" class="nav-toggle" aria-controls="site-nav" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </button>
+      <nav id="site-nav" class="main-nav" role="navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <div class="hero-viewport">
+    <section class="hero" id="home">
       <div class="container hero-inner">
         <img src="images/profile.jpg" alt="Jordie Niles" class="profile-image">
         <h2>Hi, I'm Jordie Niles.</h2>
@@ -86,193 +647,4 @@
         <div class="experience-header">
           <h3>General Manager and Float Guide</h3><span class="experience-date">April 2023 - Present</span>
         </div>
-        <p class="company">Float.Calm | Winnipeg, MB</p>
-        <ul>
-          <li>Built weekly operational reports to track guest retention, revenue, and service utilization using
-            spreadsheet automation.</li>
-          <li>Analyzed booking and staffing data to optimize schedules and reduce labor costs while maintaining service
-            levels.</li>
-          <li>Implemented simple dashboard visualizations for management to monitor trends and KPIs.</li>
-          <li>Led cross-functional projects that used data to inform pricing, promotions, and inventory purchasing.</li>
-          <li>Hired and trained staff; developed training materials informed by performance metrics.</li>
-        </ul>
-      </div>
-
-      <div class="experience-card">
-        <div class="experience-header">
-          <h3>Mortgage Professional</h3><span class="experience-date">Jan 2022 - Mar 2023</span>
-        </div>
-        <p class="company">Bank of Montreal | Winnipeg, MB</p>
-        <ul>
-          <li>Analyzed client application data to identify common readiness gaps and improve pre-qualification
-            workflows.</li>
-          <li>Prepared data-backed summaries for clients comparing product options and expected payment scenarios.</li>
-          <li>Built and maintained spreadsheets and simple calculators to streamline mortgage comparisons for clients.
-          </li>
-          <li>Collaborated with underwriting and operations using data summaries to reduce application processing time.
-          </li>
-        </ul>
-      </div>
-
-      <div class="experience-card">
-        <div class="experience-header">
-          <h3>Mortgage Professional</h3><span class="experience-date">Dec 2020 - Jan 2022</span>
-        </div>
-        <p class="company">Invis Inc. | Winnipeg, MB</p>
-        <ul>
-          <li>Compared product rates and terms across 50+ lenders using structured spreadsheets and data lookups.</li>
-          <li>Analyzed launch performance metrics for new partner products and reported findings to leadership.</li>
-          <li>Created concise visual summaries and client-ready documents to explain product differences and risk
-            tradeoffs.</li>
-          <li>Supported business development by tracking referral and conversion metrics to inform outreach strategies.
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills-container">
-      <div class="skill-card">
-        <h3>Programming & Libraries</h3>
-        <p>Python (Pandas, NumPy), scikit-learn, Jupyter — for data cleaning, feature engineering, and model
-          prototyping.</p>
-      </div>
-      <div class="skill-card">
-        <h3>Data Engineering & SQL</h3>
-        <p>SQL for querying/joins, ETL scripting with Python, and building reproducible pipelines for scheduled
-          reporting.</p>
-      </div>
-      <div class="skill-card">
-        <h3>Modeling & Machine Learning</h3>
-        <p>Supervised learning (regression, classification), model validation, cross-validation, and performance
-          monitoring.</p>
-      </div>
-      <div class="skill-card">
-        <h3>Visualization & Reporting</h3>
-        <p>Plotly, Matplotlib, and dashboarding (Plotly Dash / basic web dashboards) to surface insights and trends.</p>
-      </div>
-      <div class="skill-card">
-        <h3>Statistics & Experimentation</h3>
-        <p>Hypothesis testing, A/B analysis, descriptive statistics, and communicating uncertainty in results.</p>
-      </div>
-      <div class="skill-card">
-        <h3>Communication & Stakeholder Work</h3>
-        <p>Translating technical findings into concise recommendations and visual summaries for non-technical audiences.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Education Section -->
-  <section id="education">
-    <h2>Education</h2>
-    <div class="education-container">
-      <div class="education-card">
-        <h3>Data Science Bootcamp</h3>
-        <p class="education-institution">TripleTen | Cheyenne, WY</p>
-        <p class="education-description">Intensive, hands-on bootcamp covering the end-to-end data science workflow.</p>
-        <ul style="margin-top:0.75rem;padding-left:1rem;color:#444;">
-          <li>Coursework: Python (Pandas, NumPy), SQL, statistics, supervised learning, model evaluation, and data
-            visualization.</li>
-          <li>Focus areas: ETL & reproducible pipelines, exploratory data analysis, feature engineering, and
-            dashboarding.</li>
-          <li>Capstone: practical project(s) applying analysis and visualization to real-world datasets (project demos
-            coming soon).</li>
-        </ul>
-      </div>
-      <div class="education-card">
-        <h3>Mortgage Professional Certification</h3>
-        <p class="education-institution">Mortgage Professionals Canada | Toronto, ON</p>
-        <p class="education-description">Professional certification for mortgage industry expertise and Canadian
-          mortgage standards compliance.</p>
-      </div>
-      <div class="education-card">
-        <h3>High School Diploma</h3>
-        <p class="education-institution">Niverville Collegiate | Niverville, MB</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Jordie Niles. All rights reserved.</p>
-    <p style="margin-top: 1rem; font-size: 0.9rem;">
-      <a href="tel:+12042985968" class="icon-link footer-link" data-tooltip="Call (204) 298-5968"
-        title="Call (204) 298-5968" style="text-decoration:none;">
-        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1C10.07 21 3 13.93 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.24.2 2.45.57 3.57.13.4.04.86-.24 1.01l-2.21 2.21z" />
-        </svg>
-        <span class="sr-only">Call (204) 298-5968</span>
-      </a> |
-      <a href="mailto:jordankatrinaniles@gmail.com" class="icon-link footer-link"
-        data-tooltip="Email jordankatrinaniles@gmail.com" title="Email jordankatrinaniles@gmail.com"
-        style="text-decoration:none;">
-        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
-          <path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
-        </svg>
-        <span class="sr-only">Email jordankatrinaniles@gmail.com</span>
-      </a> |
-      <a href="https://www.linkedin.com/in/jordieniles" target="_blank" rel="noopener" class="icon-link footer-link"
-        data-tooltip="View LinkedIn profile" title="View LinkedIn profile" style="text-decoration:none;">
-        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M4.98 3.5C4.98 4.6 4.14 5.5 3 5.5 1.86 5.5 1 4.6 1 3.5 1 2.4 1.86 1.5 3 1.5c1.14 0 1.98.9 1.98 2zM.5 8.98h4.98V24H.5zM8.5 8.98h4.78v2.04h.07c.67-1.27 2.3-2.6 4.74-2.6 5.07 0 6 3.34 6 7.67V24H19.3v-7.37c0-1.76-.03-4.03-2.48-4.03-2.48 0-2.85 1.93-2.85 3.92V24H8.5z" />
-        </svg>
-        <span class="sr-only">LinkedIn</span>
-      </a>
-    </p>
-  </footer>
-
-  <script>
-    (function () {
-      const toggle = document.getElementById('nav-toggle');
-      const body = document.body;
-      const nav = document.getElementById('site-nav');
-      if (!toggle || !nav) return;
-
-      function openNav() { body.classList.add('nav-open'); toggle.setAttribute('aria-expanded', 'true'); const first = nav.querySelector('a'); if (first) first.focus(); }
-      function closeNav() { body.classList.remove('nav-open'); toggle.setAttribute('aria-expanded', 'false'); toggle.focus(); }
-
-      toggle.addEventListener('click', function () { if (body.classList.contains('nav-open')) closeNav(); else openNav(); });
-      document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && body.classList.contains('nav-open')) closeNav(); });
-      document.addEventListener('click', function (e) { if (!body.classList.contains('nav-open')) return; const isInside = nav.contains(e.target) || toggle.contains(e.target); if (!isInside) closeNav(); });
-    })();
-  </script>
-  <script>
-    (function () {
-      // compute combined topbar + header height and set --header-height CSS variable
-      function setHeaderHeight() {
-        try {
-          const topbar = document.querySelector('.topbar');
-          const header = document.querySelector('header');
-          let h = 0;
-          if (topbar) h += Math.ceil(topbar.getBoundingClientRect().height);
-          if (header) h += Math.ceil(header.getBoundingClientRect().height);
-          if (!h || h <= 0) h = 96; // fallback
-          document.documentElement.style.setProperty('--header-height', h + 'px');
-        } catch (err) {
-          // ignore
-        }
-      }
-
-      // run on load and resize
-      window.addEventListener('load', setHeaderHeight);
-      window.addEventListener('resize', function () { window.requestAnimationFrame(setHeaderHeight); });
-
-      // also run once now in case DOM is ready
-      if (document.readyState === 'complete' || document.readyState === 'interactive') setHeaderHeight();
-      else document.addEventListener('DOMContentLoaded', setHeaderHeight);
-
-      // when fonts finish loading they can change layout — recalc then
-      if (document.fonts && document.fonts.ready) {
-        document.fonts.ready.then(setHeaderHeight).catch(function () { });
-      }
-    })();
-  </script>
-</body>
-
-</html>
+... (backup truncated for brevity)
